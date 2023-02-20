@@ -1,0 +1,111 @@
+
+
+.pilotosTitle{
+    color: $color-primary;
+    text-align: center;
+    font-size: $text-medium;
+}
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(2,6fr);
+    grid-auto-rows: 300;
+    padding: $spacing-small;
+    grid-gap: 10px;
+}
+.gallery__item{
+    position: relative;
+}
+.gallery__img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+    filter: blur(3px);
+}
+.gallery__img:hover{
+    filter: blur(0px);
+    transition: .5s;
+}
+.gallery__title {
+    position: absolute;
+    bottom: 0;
+    color: $color-primary;
+    text-align: center;
+    width: 100%;
+    background-color: $color-secondary;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    margin: 0;
+    padding: $spacing-xsmall;
+}
+
+.gallery__item:nth-child(1){
+    grid-column-start: span 3;
+}
+.gallery__item:nth-child(2){
+    grid-column-start: span 2;
+}
+.gallery__item:nth-child(3){
+    grid-column-start: span 2;
+}
+.gallery__item:nth-child(4){
+    grid-column-start: span 3;
+}
+.gallery__item:nth-child(5){
+    grid-column-start: span 2;
+}
+.gallery__item:nth-child(6){
+    grid-column-start: span 2;
+}
+.gallery__item:nth-child(7){
+    grid-column-start: span 3;
+}
+.gallery__item:nth-child(8){
+    grid-column-start: span 2;
+}
+.gallery__item:nth-child(9){
+    grid-column-start: span 2;
+}
+.gallery__item:nth-child(10){
+    grid-column-start: span 3;
+}
+.gallery__item:nth-child(11){
+    grid-column-start: span 3;
+}
+.gallery__item:nth-child(12){
+    grid-column-start: span 2;
+}
+.gallery__item:nth-child(13){
+    grid-column-start: span 2;
+}
+.gallery__item:nth-child(14){
+    grid-column-start: span 2;
+}
+.gallery__item:nth-child(15){
+    grid-column-start: span 3;
+}
+.gallery__item:nth-child(16){
+    grid-column-start: span 2;
+}
+.gallery__item:nth-child(17){
+    grid-column-start: span 3;
+}
+.gallery__item:nth-child(18){
+    grid-column-start: span 2;
+}
+.gallery__item:nth-child(19){
+    grid-column-start: span 3;
+}
+.gallery__item:nth-child(20){
+    grid-column-start: span 2;
+}
+
+@media (min-width: 768px) {
+    .gallery-container{        
+        grid-template-columns: repeat(12, 1fr);
+    }
+    .pilotosTitle {
+        font-size: $text-large;
+    }
+    
+}

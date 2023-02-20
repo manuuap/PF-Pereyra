@@ -1,0 +1,23 @@
+/* footer */
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: $color-secondary;
+    font-size: $text-base;
+}
+
+.footer__redes{
+    display: flex;
+    gap: $spacing-small;
+}
+.footer__redes img{
+    max-width: 35px;
+    margin: $spacing-small 0;
+}
+
+.footer__redes img:hover{
+    scale: 1.5;
+    transition: 1s;
+}

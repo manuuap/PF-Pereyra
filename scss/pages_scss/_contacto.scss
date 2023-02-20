@@ -1,0 +1,62 @@
+.formulario{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content:center;
+    border-radius: 10px;
+    gap: $spacing-medium;
+    align-items: center;
+    background-color: black;
+}
+
+.formulario__tittle{
+    color: $color-primary;
+    font-size: $text-medium;
+    text-align: center;
+    padding: $spacing-medium;
+}
+
+.formulario__img{
+    max-width: 200px;
+}
+
+.formulario__cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: $spacing-medium;
+    margin: $spacing-small;
+    max-width: 550px;
+    gap: $spacing-xsmall;
+}
+
+.formulario__input {
+    border-radius: 5px;
+    width: 100%;
+    font-size: $text-small;
+    padding: $spacing-xsmall;
+
+}
+
+.formulario__button {
+    font-size: $text-small;
+    padding: $spacing-xsmall;
+    background-color: $color-alternative_2;
+    color: $color-alternative;
+}
+
+.formulario__button:hover{
+    border-radius: 3px;
+    background-color: $color-secondary;
+    color: $color-alternative_2;
+    transition: 0.5s;
+}
+@media (min-width: 960px){
+    .formulario{
+    flex-direction: row;    
+    margin: $spacing-large;
+    padding: $spacing-large;
+    }
+    .formulario__img{
+        max-width: 400px;
+    }
+}

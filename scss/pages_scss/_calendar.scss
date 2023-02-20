@@ -1,0 +1,51 @@
+.calendario {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: $spacing-small;
+}
+
+.calendario__cont{
+    display: flex;    
+    flex-direction: column;
+    justify-content: space-around;
+    gap: $spacing-small;
+    max-width: 90%;
+    max-height: 80%;
+    margin: $spacing-small;
+    padding: $spacing-small;
+    background-color: $color-secondary;
+    border-radius: 5px;
+}
+
+.calendario__cont:hover{
+    scale: 1.1;
+    transition: 1s;
+}
+
+.calendario__img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.calendario__tittle{
+    font-size: $text-base;
+    color: $color-alternative_2;
+    text-align: center;
+}
+.calendario__p {
+    font-size: $text-xsmall;
+    color: $color-alternative_2;
+    text-align: justify;
+}
+
+@media (min-width: 1050px) {
+    .calendario__cont{
+        flex-direction: row;
+        justify-content: center;
+    };
+    .calendario__img {
+        max-width: 70%;
+    };
+}
