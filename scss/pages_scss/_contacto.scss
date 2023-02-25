@@ -1,12 +1,17 @@
+@mixin flex-gap-align{    
+    display: flex;    
+    gap: $spacing-small;
+    align-items: center;
+}
+
 .formulario{
-    display: flex;
+    @include flex-gap-align;
     flex-direction: column-reverse;
     justify-content:center;
     border-radius: 10px;
-    gap: $spacing-medium;
-    align-items: center;
     background-color: black;
 }
+
 
 .formulario__tittle{
     color: $color-primary;
@@ -20,18 +25,17 @@
 }
 
 .formulario__cont {
-    display: flex;
+    @include flex-gap-align;
     flex-direction: column;
     justify-content: space-evenly;
     padding: $spacing-medium;
     margin: $spacing-small;
     max-width: 550px;
-    gap: $spacing-xsmall;
 }
 
 .formulario__input {
     border-radius: 5px;
-    width: 100%;
+    width: 250px;
     font-size: $text-small;
     padding: $spacing-xsmall;
 
@@ -49,14 +53,4 @@
     background-color: $color-secondary;
     color: $color-alternative_2;
     transition: 0.5s;
-}
-@media (min-width: 960px){
-    .formulario{
-    flex-direction: row;    
-    margin: $spacing-large;
-    padding: $spacing-large;
-    }
-    .formulario__img{
-        max-width: 400px;
-    }
 }

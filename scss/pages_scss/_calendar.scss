@@ -5,6 +5,10 @@
     align-items: center;
     gap: $spacing-small;
 }
+.calendario div h1{
+        text-align: center;
+        color: $color-primary;
+    }
 
 .calendario__cont{
     display: flex;    
@@ -40,12 +44,3 @@
     text-align: justify;
 }
 
-@media (min-width: 1050px) {
-    .calendario__cont{
-        flex-direction: row;
-        justify-content: center;
-    };
-    .calendario__img {
-        max-width: 70%;
-    };
-}

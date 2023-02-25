@@ -100,12 +100,3 @@
     grid-column-start: span 2;
 }
 
-@media (min-width: 768px) {
-    .gallery-container{        
-        grid-template-columns: repeat(12, 1fr);
-    }
-    .pilotosTitle {
-        font-size: $text-large;
-    }
-    
-}

@@ -3,8 +3,8 @@
     text-align: center;
     color: $color-primary;
     font-size: $text-medium;
-    margin: $spacing-large 0 0 0;
-    border: $spacing-small;
+    margin: $spacing-large/2;
+    border: $spacing-small/2;
     border-bottom: 1px solid $color-contrast;
     transition: all 1s;
 }
@@ -23,14 +23,3 @@
     max-width: 250px;
 }
 
-@media (min-width: 768px){
-.main__info {    
-    margin: $spacing-large 0;
-}
-.main__gallery {
-    flex-direction: row;
-    justify-content: space-between;        
-    margin-top: $spacing-large;
-    padding-top: $spacing-small;
-    }
-}

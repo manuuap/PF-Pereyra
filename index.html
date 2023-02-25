@@ -6,35 +6,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Liga Blue Simracing, Formula 1 Simracing de Argentina con crossplay">
-    <meta name="keywords" content="Liga, Blue Simracing, F1, Formula 1, Simulador, Simulacion, Carrera, Ferrari, RedBull">
+    <meta name="keywords"
+        content="Liga, Blue Simracing, F1, Formula 1, Simulador, Simulacion, Carrera, Ferrari, RedBull">
     <link rel="shortcut icon" href="./../images/logo_blue_contacto.png" type=”image/x-icon”>
     <title>Blue Simracing</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/main.css">
 </head>
 
 <body>
     <!-- inicio Header -->
     <header>
-        <a href="./index.html"><img src="./images/logo_blue.png" alt="logo_blue" class="header__img"></a> 
-        <nav>
-            <ul class="menu">
-                <li>
-                    <a class="menu__link" href="./index.html">Inicio</a>
-                </li>
-                <li>
-                    <a class="menu__link" href="./pages/noticias.html">Noticias</a>
-                </li>
-                <li>
-                    <a class="menu__link" href="./pages/calendar.html">Calendario</a>
-                </li>
-                <li>
-                    <a class="menu__link" href="./pages/pilotos.html">Pilotos</a>
-                </li>
-                <li>
-                    <a class="menu__link" href="./pages/contacto.html">Contacto</a>
-                </li>
-            </ul>
+        <nav class="navbar navbar-expand-md navbar-dark">
+            <div class="container">
+                <a href="./index.html"><img src="./images/logo_blue.png" alt="logo_blue" class="header__img"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./pages/noticias.html">Noticias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./pages/calendar.html">Calendario</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./pages/pilotos.html">Pilotos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./pages/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
+
     </header>
     <!-- fin Header -->
     <!-- inicio Main -->
@@ -44,19 +56,25 @@
             <img class="main__image" src="./images/logo_blue.png" alt="logo_blue">
         </div>
         <div class="main__gallery">
-            <a href="https://belgranoesports.com.ar"><img src="./images/sponsors/belgrano.png" alt="logo_belgrano"/></a>
-            <img src="./images/sponsors/f1.svg" alt="logo_f1"/>
+            <a href="https://belgranoesports.com.ar"><img src="./images/sponsors/belgrano.png"
+                    alt="logo_belgrano" /></a>
+            <img src="./images/sponsors/f1.svg" alt="logo_f1" />
         </div>
     </main>
     <footer>
         <p>Todos los derechos reservados</p>
         <div class="footer__redes">
-            <a href="https://www.instagram.com/bluesimracing"><img src="./images/logo_redes/instagram.png" alt="instagram"></a>
+            <a href="https://www.instagram.com/bluesimracing"><img src="./images/logo_redes/instagram.png"
+                    alt="instagram"></a>
             <a href="https://www.twitch.tv/bluesimracing"><img src="./images/logo_redes/twitch.png" alt="twitch"></a>
             <a href="https://twitter.com/BlueSimracing"><img src="./images/logo_redes/twitter.png" alt="twitter"></a>
-            <a href="https://www.youtube.com/@bluesimracing4222"><img src="./images/logo_redes/you_tube.png" alt="you_tube"></a>
+            <a href="https://www.youtube.com/@bluesimracing4222"><img src="./images/logo_redes/you_tube.png"
+                    alt="you_tube"></a>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

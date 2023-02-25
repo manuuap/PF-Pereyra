@@ -6,42 +6,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Liga Blue Simracing, Formula 1 Simracing de Argentina con crossplay">
-    <meta name="keywords" content="Liga, Blue Simracing, F1, Formula 1, Simulador, Simulacion, Carrera, Ferrari, RedBull">
+    <meta name="keywords"
+        content="Liga, Blue Simracing, F1, Formula 1, Simulador, Simulacion, Carrera, Ferrari, RedBull">
     <link rel="shortcut icon" href="./../images/logo_blue_contacto.png" type=”image/x-icon”>
     <title>Blue Simracing</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="./../css/main.css">
 </head>
 
 <body>
     <!-- inicio Header -->
     <header>
-        <a href="./../index.html"><img src="./../images/logo_blue.png" alt="logo_blue" class="header__img"></a>
-        <nav>
-            <ul class="menu">
-                <li>
-                    <a class="menu__link" href="./../index.html">Inicio</a>
-                </li>
-                <li>
-                    <a class="menu__link" href="./noticias.html">Noticias</a>
-                </li>
-                <li>
-                    <a class="menu__link" href="./calendar.html">Calendario</a>
-                </li>
-                <li>
-                    <a class="menu__link" href="./pilotos.html">Pilotos</a>
-                </li>
-                <li>
-                    <a class="menu__link" href="./contacto.html">Contacto</a>
-                </li>
-            </ul>
+        <nav class="navbar navbar-expand-md navbar-dark">
+            <div class="container">
+                <a href="./index.html"><img src="./../images/logo_blue.png" alt="logo_blue" class="header__img"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./noticias.html">Noticias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./calendar.html">Calendario</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./pilotos.html">Pilotos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
     <!-- fin Header -->
     <!-- inicio Main -->
     <main class="container">
         <section class="calendario">
+            <div>
+                <h1>Calendario Temporada 8</h1>
+            </div>
             <div class="calendario__cont">
-                <img class="calendario__img" src="./../images/calendario/circuito_1.jpg">
+                <img class="calendario__img" src="./../images/calendario/circuito_1.jpg" alt="belgica">
                 <div>
                     <p class="calendario__tittle">Fecha 1: Gran Premio de Bélgica</p>
                     <p class="calendario__p">Spa-Francorchamps se ha caracterizado desde sus orígenes por lo
@@ -107,10 +121,10 @@
                         curvas se encuentra la entrada a los boxes y se debe de salir muy bien de la curva 17 ya que a
                         continuación se presenta la recta principal.</p>
                 </div>
-                <img class="calendario__img" src="./../images/calendario/circuito_2.jpg">
+                <img class="calendario__img" src="./../images/calendario/circuito_2.jpg" alt="mexico">
             </div>
             <div class="calendario__cont">
-                <img class="calendario__img" src="./../images/calendario/circuito_3.jpg">
+                <img class="calendario__img" src="./../images/calendario/circuito_3.jpg" alt="francia">
                 <div>
                     <p class="calendario__tittle">Fecha 3: Gran Premio de Francia</p>
                     <p class="calendario__p">El circuito Paul Ricard recibe el nombre de su creador, el magnate de las
@@ -164,10 +178,10 @@
                         cual compensa el efecto positivo del caucho sobre el asfalto. Por esta misma razón, el circuito
                         favorece a aquellos pilotos que salen antes que los demás en las tandas de clasificación.</p>
                 </div>
-                <img class="calendario__img" src="./../images/calendario/circuito_4.jpg">
+                <img class="calendario__img" src="./../images/calendario/circuito_4.jpg" alt="hungria">
             </div>
             <div class="calendario__cont">
-                <img class="calendario__img" src="./../images/calendario/circuito_5.jpg">
+                <img class="calendario__img" src="./../images/calendario/circuito_5.jpg" alt="españa">
                 <div>
                     <p class="calendario__tittle">Fecha 5: Gran Premio de España</p>
                     <p class="calendario__p">El primer Gran Premio en España se disputó en 1913 sobre un circuito de
@@ -236,10 +250,10 @@
                         Clark y Alain Prost con cinco triunfos cada uno, Nigel Mansell logró cuatro, en tanto que Jack
                         Brabham, Niki Lauda y Michael Schumacher obtuvieron tres conquistas cada uno.</p>
                 </div>
-                <img class="calendario__img" src="./../images/calendario/circuito_6.jpg">
+                <img class="calendario__img" src="./../images/calendario/circuito_6.jpg" alt="gran_bretaña">
             </div>
             <div class="calendario__cont">
-                <img class="calendario__img" src="./../images/calendario/circuito_7.jpg">
+                <img class="calendario__img" src="./../images/calendario/circuito_7.jpg" alt="italia">
                 <div>
                     <p class="calendario__tittle">Fecha 7: Gran Premio de Italia</p>
                     <p class="calendario__p">El Gran Premio de Italia es una carrera de automovilismo de velocidad
@@ -298,7 +312,7 @@
                         urbanístico.
                     </p>
                 </div>
-                <img class="calendario__img" src="./../images/calendario/circuito_8.jpg">
+                <img class="calendario__img" src="./../images/calendario/circuito_8.jpg" alt="baku">
             </div>
         </section>
     </main>
@@ -316,6 +330,9 @@
         </div>
     </footer>
     <!-- fin Footer -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
